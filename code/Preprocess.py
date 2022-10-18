@@ -115,5 +115,32 @@ data2["hour_created"]=hour_created
 data2["minute_created"]=minute_created
 
 #Saving changes to the csv file
-data2.to_csv(csvname_output,index='False')  
+#data2.to_csv(csvname_output,index='False')
+
+corpus=[]
+y=[]
+import numpy as np
+for i in range(rows):
+    newtext=data2['text'][i]
+    if(len(str((newtext)))!=0 and str(newtext)!='nan'):
+        corpus.append(newtext)
+        y.append(data2['binary_class'][i])
+
+from sklearn.feature_extraction.text import CountVectorizer
+cv = CountVectorizer(max_features = 1500)
+X2 = cv.fit_transform(corpus).toarray()
+y = np.array(y)
+
+from sklearn.model_selection import train_test_split
+X2_train, X2_test, y2_train, y2_test = train_test_split(X2, y, test_size = 0.2, random_state = 0)
+
+
+from sklearn.svm import SVC
+from sklearn import svm
+SVC2 = SVC(kernel = 'linear', random_state = 0)
+SVC2.fit(X2_train, y2_train)
+
+from sklearn.metrics import accuracy_score
+y_pred=SVC2.predict(X2_test)
+print("The Accuracy using Support Vector Clustering on Data-set 2: ",accuracy_score(y2_test,y_pred))
 
