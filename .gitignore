@@ -3,6 +3,11 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Specify filepatterns you want git to ignore.
+
+*.DS_Store
+*-checkpoint.*
+
 # C extensions
 *.so
 
