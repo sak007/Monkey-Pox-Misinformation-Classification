@@ -1,0 +1,37 @@
+Model Name,Accuracy,Precision,Recall,F1-Score,Parameters
+svm_lemma_cv,56.54205607,53.22580645,94.28571429,68.04123711,"{'C': 1, 'gamma': 1, 'kernel': 'linear'}
+"
+svm_lemma_tf,56.54205607,53.22580645,94.28571429,68.04123711,"{'C': 0.1, 'gamma': 1, 'kernel': 'poly'}
+"
+svm_port_cv,56.30841121,53.06666667,94.76190476,68.03418803,"{'C': 10, 'gamma': 1, 'kernel': 'sigmoid'}
+"
+svm_port_tf,57.24299065,53.6,95.71428571,68.71794872,"{'C': 1, 'gamma': 1, 'kernel': 'poly'}
+"
+rf_lemma_cv,56.77570093,53.33333333,95.23809524,68.37606838,"{'criterion': 'gini', 'max_features': 'log2', 'min_samples_leaf': 2, 'min_samples_split': 10, 'n_estimators': 700, 'random_state': 0}
+"
+rf_lemma_tf,57.24299065,53.6,95.71428571,68.71794872,"{'criterion': 'gini', 'max_features': 'sqrt', 'min_samples_leaf': 2, 'min_samples_split': 10, 'n_estimators': 100, 'random_state': 0}
+"
+rf_port_cv,56.77570093,53.35120643,94.76190476,68.26758148,"{'criterion': 'gini', 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 10, 'n_estimators': 300, 'random_state': 0}
+"
+rf_port_tf,56.54205607,53.22580645,94.28571429,68.04123711,"{'criterion': 'entropy', 'max_features': 'log2', 'min_samples_leaf': 2, 'min_samples_split': 10, 'n_estimators': 100, 'random_state': 0}
+"
+dt_lemma_cv,55.14018692,52.34375,95.71428571,67.67676768,"{'criterion': 'entropy', 'max_depth': 100, 'max_features': 'sqrt', 'random_state': 0}
+"
+dt_lemma_tf,56.54205607,53.17460317,95.71428571,68.36734694,"{'criterion': 'entropy', 'max_depth': 100, 'max_features': 'log2', 'random_state': 0}
+"
+dt_port_cv,55.8411215,52.74151436,96.19047619,68.12816189,"{'criterion': 'entropy', 'max_depth': 100, 'max_features': 'sqrt', 'random_state': 0}
+"
+dt_port_tf,56.54205607,53.17460317,95.71428571,68.36734694,"{'criterion': 'entropy', 'max_depth': 100, 'max_features': 'sqrt', 'random_state': 0}
+"
+nb_lemma_cv,53.97196262,51.61290323,99.04761905,67.862969,
+nb_lemma_tf,53.97196262,51.61290323,99.04761905,67.862969,
+nb_port_cv,53.73831776,51.51515152,97.14285714,67.32673267,
+nb_port_tf,53.73831776,51.49253731,98.57142857,67.64705882,
+knn_lemma_cv,56.07476636,52.95698925,93.80952381,67.6975945,"{'algorithm': 'auto', 'metric': 'chebyshev', 'n_neighbors': 5, 'p': 1}
+"
+knn_lemma_tf,56.30841121,53.00261097,96.66666667,68.46543002,"{'algorithm': 'auto', 'metric': 'chebyshev', 'n_neighbors': 5, 'p': 1}
+"
+knn_port_cv,56.54205607,53.22580645,94.28571429,68.04123711,"{'algorithm': 'auto', 'metric': 'chebyshev', 'n_neighbors': 5, 'p': 1}
+"
+knn_port_tf,56.54205607,53.19148936,95.23809524,68.25938567,"{'algorithm': 'auto', 'metric': 'minkowski', 'n_neighbors': 5, 'p': 1}
+"
