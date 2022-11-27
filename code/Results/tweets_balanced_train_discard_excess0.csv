@@ -27,3 +27,11 @@ knn_port_cv,89.48598131,87.33031674,91.9047619,89.55916473,"{'algorithm': 'kd_tr
 "
 knn_port_tf,91.58878505,91.03773585,91.9047619,91.46919431,"{'algorithm': 'auto', 'metric': 'minkowski', 'n_neighbors': 15, 'p': 2}
 "
+rf_lemma_cv,85.04672897,78.74015748,95.23809524,86.20689655,"{'criterion': 'entropy', 'max_features': 'sqrt', 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 1000, 'random_state': 0}
+"
+rf_lemma_tf,86.21495327,80.07968127,95.71428571,87.20173536,"{'criterion': 'gini', 'max_features': 'sqrt', 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 500, 'random_state': 0}
+"
+rf_port_cv,87.14953271,81.63265306,95.23809524,87.91208791,"{'criterion': 'gini', 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 5, 'n_estimators': 1000, 'random_state': 0}
+"
+rf_port_tf,87.85046729,82.91666667,94.76190476,88.44444444,"{'criterion': 'gini', 'max_features': 'sqrt', 'min_samples_leaf': 2, 'min_samples_split': 10, 'n_estimators': 500, 'random_state': 0}
+"
