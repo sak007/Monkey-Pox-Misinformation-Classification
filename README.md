@@ -37,3 +37,4 @@
 |Tweets and Hashtags|[Link](https://github.ncsu.edu/aselvam/engr-ALDA-Fall2022-P15/blob/main/code/analyze_text_and_hashtags.ipynb)|
 |Tweets, Hashtags and User Description|[Link](https://github.ncsu.edu/aselvam/engr-ALDA-Fall2022-P15/blob/main/code/analyze_text_hashtags_bio.ipynb)|
 |All Attributes|[Link](https://github.ncsu.edu/aselvam/engr-ALDA-Fall2022-P15/blob/main/code/analyze_all_attributes.ipynb)|
+|Ensemble Learning|[Link](https://github.ncsu.edu/aselvam/engr-ALDA-Fall2022-P15/blob/main/code/Ensmebled_Learning_Code.ipynb)|
